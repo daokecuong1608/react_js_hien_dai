@@ -63,6 +63,19 @@ const Lesson17 = (props) => {
 
   // Keyed collections: Maps, Sets, WeakMaps, WeakSets
 
+  //object datatypes
+  let a = {};
+  console.log(">>> check object === ", typeof a);
+
+  let c = { name: "John", age: 30 };
+  console.log(">>> check object === ", typeof c);
+
+  let b = ["a", "b", "c"];
+  console.log(">>> check array === ", typeof b);
+
+  let d = new Date();
+  console.log(">>> check date === ", typeof d);
+
   return <div className="lesson17">Primitive datatypes</div>;
 };
 
