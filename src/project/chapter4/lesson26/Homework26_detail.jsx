@@ -19,27 +19,14 @@ import { map } from "lodash";
  */
 
 const Homework26 = (props) => {
-  const [listUser, setListUser] = useState([]);
+  const { listUser } = props;
 
-  useEffect(() => {
-    fetchListUserWithPage();
-  }, []);
-  //xử lý lấy danh sách user và phân trang
-  const fetchListUserWithPage = async () => {
-    //call api
-    let res = await getUserWithPaginate(1, 3);
-    if (res && +res.EC === 0) {
-      console.log(">>> check res: ", res);
-      setListUser(res.DT);
-    }
-  };
   return (
-    <div className="table-users-container">
-      {/* {listUser &&
+    <div className="list-users">
+      {/* //chuyển dữ liệu từ listUser sang component User */}
+      {listUser &&
         listUser.length > 0 &&
-        listUser.map((user, index) => ( */}
-      <User listUser={listUser} fetchListUserWithPage={fetchListUserWithPage} />
-      {/* ))} */}
+        listUser.map((item, index) => <User key={index} data={item} />)}
     </div>
   );
 };
