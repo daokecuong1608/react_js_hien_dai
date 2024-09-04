@@ -14,6 +14,12 @@ setTimeout(function(){
 }, 1000);
 
 //tu thuc thi
+
+//tu thuc thi
+(function (){
+    console.log(">>> anonymous function");
+})()
+
 (()=>{
     console.log(">>> anonymous function");
 })()

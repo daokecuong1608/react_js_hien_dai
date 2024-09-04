@@ -16,8 +16,8 @@ const Lesson25 = (props) => {
     },
   };
 
-  //   let copyPerson = _.clone(person); //shallow copy
-  let copyPerson = _.cloneDeep(person); //deep copy
+  //   let copyPerson = _.clone(person); //shallow copy lv 1
+  let copyPerson = _.cloneDeep(person); //deep copy copy hết
 
   copyPerson.name = "update city";
   copyPerson.job.title = "update job";

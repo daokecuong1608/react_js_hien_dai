@@ -12,6 +12,12 @@ import Lesson24 from "./chapter3/Lesson24";
 import Lesson25 from "./chapter3/Lesson25";
 import Lesson26 from "./chapter4/lesson26/Lesson26";
 import Lesson27 from "./chapter4/lesson27/Lesson27";
+import Lesson28 from "./chapter4/lesson28/Lesson28";
+import Lesson29 from "./chapter4/lesson29/Lesson29";
+import Lesson30 from "./chapter4/lesson30/Lesson30";
+import Lesson32 from "./chapter4/lesson32/Lesson32";
+import Lesson331 from "./chapter4/lesson33/Lesson331";
+import Lesson34 from "./chapter4/lesson34/Lesson34";
 
 const Project = (props) => {
   return (
@@ -26,8 +32,12 @@ const Project = (props) => {
       {/* <Lesson22 /> */}
       {/* <Lesson23 /> */}
       {/* <Lesson25 /> */}
-      <Lesson27 />
-      <Lesson26 />
+      {/* <Lesson27 /> */}
+      {/* <Lesson28 /> */}
+      {/* <Lesson29 /> */}
+      {/* <Lesson30 /> */}
+      {/* <Lesson331 /> */}
+      <Lesson34 />
     </div>
   );
 };

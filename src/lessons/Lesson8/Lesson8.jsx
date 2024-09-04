@@ -15,19 +15,22 @@ const Lesson8 = (props) => {
             <h3>Lesson 8 :</h3>
             <div>
                 <button 
-                onClick={handleOnClick2}
+                //passing functions
+                // onClick={handleOnClick2}
+                onClick={handleOnClick2()}  //running (excute) 
                 >Tham Chiếu</button>
             </div>
             <div>
                 <button 
+                //running (excute) 
                 // onClick={alert('click me')}
                 >Inline</button>
             </div>
             <div>
                 <button
-                onClick={() => {
-                    alert('click me')
-                }}
+                // onClick={() => {
+                //     alert('click me')
+                // }}
                 >Arrow function</button>
             </div>
         </div>

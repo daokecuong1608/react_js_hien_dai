@@ -32,6 +32,7 @@ const Lesson22 = (props) => {
   //   clone.name = "update name"; // ok
   //   clone.address.city = "hcm"; //2 level deep => not ok
   //   console.log(">>> check person: ", person, " clone= ", clone);
+ 
   // spread syntax
   const clone = {
     ...person,
@@ -47,3 +48,4 @@ const Lesson22 = (props) => {
 };
 
 export default Lesson22;
+//toán tử Spread Syntax (...)  chỉ  ảnh hưởng  ở mức độ 1 ko ảnh hưởng sâu hn => shall copy : copy nông 
